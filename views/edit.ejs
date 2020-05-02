@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My CRUD in NodeJS</title>
+  <style>
+    body {background-color: aquamarine;}
+    
+    h1 {color: brown;}
+  </style>
+</head>
+</head>
+<body>
+ 
+<h2>Editar Registro</h2>
+  <% data.forEach(function(details) { %>
+    <form action="/edit/<%= details._id %>" method="POST">
+        
+      <label for="Nome">Nome</label><br>
+      <input type="text" value="<%= details.name %>" name="name"><br>
+      <label for="Sobrenome">Sobrenome</label><br>
+      <input type="text" value="<%= details.surname %>" name="surname"><br>
+      <label for="Genero">Genero</label><br>
+      <input type="radio" id="Homem" name="gender" value="Homem">
+      <label for="Homem">Homem</label><br>
+      <input type="radio" id="Mulher" name="gender" value="Mulher">
+      <label for="Mulher">Mulher</label><br>
+      <input type="radio" id="Outro" name="gender" value="Outro">
+      <label for="Outro">Outro</label><br>
+      <label for="Endereço">Endereço</label><br>
+      <input type="text"  name= "endere" value="<%= details.endere %>"><br>
+      <label for="Telefone">Telefone</label><br>
+      <input type="tel" name="tel" value="<%= details.tel %>"><br><br>
+      <label for="email">Email</label><br>
+      <input type="email" value="<%= details.email %>" name="email"><br>
+      <label for="aniversario">Data de Nascimento:</label><br>
+      <input type="date" value="<%= details.aniversario %>" name="aniversario"><br><br>
+      <label for="aniversario">Principais Interesses:</label><br>
+      <input type="checkbox" id="op1" name="op1" value="Games" >
+      <label for="op1"> Games</label>
+      <input type="checkbox" id="op1" name="op1" value="Esportes" >
+      <label for="op2"> Esportes</label>
+      <input type="checkbox" id="op1" name="op1" value="Estudos" >
+      <label for="op3"> Estudos</label><br><br>
+      <label for="salgadinho"> Salgadinho proferido</label><br>
+        <input type="radio" id="Cheetos" name="salgadinho" value="Cheetos">
+        <label for="Cheetos">Cheetos</label><br>
+        <input type="radio" id="Fandangos" name="salgadinho" value="Fandangos">
+        <label for="Fandangos">Fandangos</label><br>
+        <input type="radio" id="Ruffles" name="salgadinho" value="Ruffles">
+        <label for="Ruffles">Ruffles</label><br><br>
+  <label for="texto">Porque devo Ganhar?</label><br>
+  <input type="text"  name="texto" value="<%= details.texto %>"><br><br>
+
+      
+
+      <br />
+      <button><a href="/show">Todos</a></button>
+      <button type="submit">Editar</button>
+    </form>
+  <% }) %>
+ 
+</body>
+</html>

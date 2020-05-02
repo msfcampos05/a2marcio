@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My CRUD in NodeJS</title>
+  <style>
+    body {background-color: aquamarine;}
+    
+    h1 {color: brown;}
+  </style>
+</head>
+<body>
+<table>
+  <tr>
+    <center><h1>Concurso: Envie uma frase explicando o porque você deve ganhar<h1></center>
+      <center><td>
+    
+      <p> <form action="/show" method="POST">
+        <label for="Nome">Nome</label><br>
+        <input type="text"  name="name"><br><br>
+        <label for="Sobrenome">Sobrenome</label><br>
+        <input type="text"  name="surname"><br><br>
+        <label for="Genero">Genero</label><br>
+        <input type="radio" id="Homem" name="gender" value="Homem">
+        <label for="Homem">Homem</label><br>
+        <input type="radio" id="Mulher" name="gender" value="Mulher">
+        <label for="Mulher">Mulher</label><br>
+        <input type="radio" id="Outro" name="gender" value="Outro">
+        <label for="Outro">Outro</label><br><br>
+        <label for="Endereço">Endereço</label><br>
+        <input type="text"  name="endere"><br><br>
+        <label for="Telefone">Telefone</label><br>
+        <input type="tel"  name="tel"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="aniversario">Data de Nascimento:</label><br>
+        <input type="date" id="aniversario" name="aniversario"><br>
+        <label for="aniversario">Principais Interesses:</label><br>
+        <input type="checkbox" id="op1" name="op1" value= "Games">
+        <label for="op1"> Games</label>
+        <input type="checkbox" id="op1" name="op1" value="Esportes">
+        <label for="op2"> Esportes</label>
+        <input type="checkbox" id="op1" name="op1" value="Estudos">
+        <label for="op3"> Estudos</label><br><br>
+
+        <button type="submit">Submit</button>
+    
+    </p>
+  </td>
+  <td></center>
+<p>
+  <img src="https://lh3.googleusercontent.com/proxy/UoRgWgCGYfYm4QNkS3u-QkOXURJc1HzfC3dXEnUCxG09lcF0hZVkCSlTAAbFe69GeTy0O5f8Z1CyRfe2gfO8lGM9zc_X9zZHLqXgAKL50rPgZuPPW0zF1j0UFuJu" alt="https://lh3.googleusercontent.com">
+</p>
+</td>
+<td><p>
+  <label for="salgadinho"> Salgadinho proferido</label><br>
+        <input type="radio" id="Cheetos" name="salgadinho" value="Cheetos">
+        <label for="Cheetos">Cheetos</label><br>
+        <input type="radio" id="Fandangos" name="salgadinho" value="Fandangos">
+        <label for="Fandangos">Fandangos</label><br>
+        <input type="radio" id="Ruffles" name="salgadinho" value="Ruffles">
+        <label for="Ruffles">Ruffles</label><br><br>
+  <label for="texto">Porque devo Ganhar?</label><br>
+  <input type="text"  name="texto"><br><br>
+  
+</p>
+</td>
+</tr>
+</table>
+</form> 
+</body>
+</html>
