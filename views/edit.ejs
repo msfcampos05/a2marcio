@@ -17,40 +17,40 @@
     <form action="/edit/<%= details._id %>" method="POST">
         
       <label for="Nome">Nome</label><br>
-      <input type="text" value="<%= details.name %>" name="name"><br>
+      <input type="text" value="<%= details.name %>" name="name" required><br>
       <label for="Sobrenome">Sobrenome</label><br>
-      <input type="text" value="<%= details.surname %>" name="surname"><br>
+      <input type="text" value="<%= details.surname %>" name="surname" required><br>
       <label for="Genero">Genero</label><br>
-      <input type="radio" id="Homem" name="gender" value="Homem">
+      <input type="radio" id="Homem" name="gender" value="Homem"<%= details.medidas = 'Homem' ? 'checked' : '' %>>
       <label for="Homem">Homem</label><br>
-      <input type="radio" id="Mulher" name="gender" value="Mulher">
+      <input type="radio" id="Mulher" name="gender" value="Mulher"<%= details.medidas = 'Mulher' ? 'checked' : '' %>>
       <label for="Mulher">Mulher</label><br>
-      <input type="radio" id="Outro" name="gender" value="Outro">
+      <input type="radio" id="Outro" name="gender" value="Outro"<%= details.medidas = 'Outro' ? 'checked' : '' %>>
       <label for="Outro">Outro</label><br>
       <label for="Endereço">Endereço</label><br>
-      <input type="text"  name= "endere" value="<%= details.endere %>"><br>
+      <input type="text"  name= "endere" required value="<%= details.endere %>"><br>
       <label for="Telefone">Telefone</label><br>
       <input type="tel" name="tel" value="<%= details.tel %>"><br><br>
       <label for="email">Email</label><br>
-      <input type="email" value="<%= details.email %>" name="email"><br>
+      <input type="email" value="<%= details.email %>" name="email" required><br>
       <label for="aniversario">Data de Nascimento:</label><br>
-      <input type="date" value="<%= details.aniversario %>" name="aniversario"><br><br>
+      <input type="date" value="<%= details.aniversario %>" name="aniversario" min="1900-05-08" max="2002-05-08" required><br><br>
       <label for="aniversario">Principais Interesses:</label><br>
-      <input type="checkbox" id="op1" name="op1" value="Games" >
+      <input type="checkbox" id="op1" name="op1" value="Games" <%= details.medidas = 'Games' ? 'checked' : '' %>>
       <label for="op1"> Games</label>
-      <input type="checkbox" id="op1" name="op1" value="Esportes" >
+      <input type="checkbox" id="op1" name="op1" value="Esportes" <%= details.medidas = 'Esportes' ? 'checked' : '' %>>
       <label for="op2"> Esportes</label>
-      <input type="checkbox" id="op1" name="op1" value="Estudos" >
+      <input type="checkbox" id="op1" name="op1" value="Estudos" <%= details.medidas = 'Estudos' ? 'checked' : '' %>>
       <label for="op3"> Estudos</label><br><br>
       <label for="salgadinho"> Salgadinho proferido</label><br>
-        <input type="radio" id="Cheetos" name="salgadinho" value="Cheetos">
+        <input type="radio" id="Cheetos" name="salgadinho" value="Cheetos"<%= details.medidas = 'Cheetos' ? 'checked' : '' %>>
         <label for="Cheetos">Cheetos</label><br>
-        <input type="radio" id="Fandangos" name="salgadinho" value="Fandangos">
+        <input type="radio" id="Fandangos" name="salgadinho" value="Fandangos"<%= details.medidas = 'Fandangos' ? 'checked' : '' %>>
         <label for="Fandangos">Fandangos</label><br>
-        <input type="radio" id="Ruffles" name="salgadinho" value="Ruffles">
+        <input type="radio" id="Ruffles" name="salgadinho" value="Ruffles"<%= details.medidas = 'Ruffles' ? 'checked' : '' %>>
         <label for="Ruffles">Ruffles</label><br><br>
   <label for="texto">Porque devo Ganhar?</label><br>
-  <input type="text"  name="texto" value="<%= details.texto %>"><br><br>
+  <input type="text"  name="texto" required value="<%= details.texto %>"><br><br>
 
       
 
